@@ -1,0 +1,23 @@
+from pathlib import Path
+
+LL_LENGTH = 150
+P_LENGTH = 1000
+A_LENGTH = 1000
+P_FDIM = 58
+
+
+BATCH_SIZE = 128
+TOTAL_EPOCH = 1
+ROOT = Path("~/AffinityPred")
+DATASET_ROOT = ROOT / "Features"
+LL_FEATURE_PATH = DATASET_ROOT / "LL_features"
+ANGLE_FEATURE_PATH = DATASET_ROOT / "AngleFeatures"/"CaH"
+PP_FEATURE_PATH = DATASET_ROOT / "AngleFeatures"/"PP_features"
+
+TRAIN_SET_LIST = ROOT / "train_20.lst"
+TRAIN_LABEL_LIST = ROOT / "Y_train_20.lst"
+
+TEST_SET_LIST = ROOT / "CSARHIQ_36.lst"
+TEST_LABEL_LIST = ROOT / ""
+
+CHECKPOINT_PATH = ROOT / "models"
